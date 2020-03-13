@@ -1,0 +1,53 @@
+.bgr1{
+    width: 500px;
+    height: 200px;
+    background: tomato;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.bgr1::before{
+    content: "";
+    position: absolute;
+    border-top: 200px solid tomato;
+    border-right: 100px solid white;
+    right: 0;
+}
+.bgr2{
+    width: 830px;
+    height: 100px;
+    background: green;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 425px;
+    top: -150px;
+    z-index: 1;
+}
+.bgr2::before{
+    content: "";
+    position: absolute;
+    border-bottom: 100px solid transparent;
+    border-left: 50px solid tomato;
+}
+.bgr2::after{
+    content: "";
+    position: absolute;
+    border-bottom: 100px solid  yellow;
+    border-left: 50px solid green;
+    right: 0;
+}
+.bgr3{
+    width: 322px;
+    height: 200px;
+    background: yellow;
+    position: relative;
+    left: 1181px;
+    top: -300px;
+}
+.bgr3::before{
+    content: "";
+    position: absolute;
+    border-top: 200px solid white;
+    border-right: 100px solid transparent;
+}
